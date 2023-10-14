@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_2.Form.Form"
+             Title="Form">
+    <VerticalStackLayout>
+
+
+        <Image Margin="20"
+               WidthRequest="200" HeightRequest="200" 
+               Source="https://play-lh.googleusercontent.com/_oM6TuM9FH111UzCaWWEhlRM1mtkMTJIkfaePEJH0boD8Pn9P1kyfVDjpUc-ljyJI_w"/>
+
+        <Entry  Keyboard="Text" Placeholder="Nombres" x:Name="_nombre" Margin="10"/>
+
+        <Entry Keyboard="Text" Placeholder="Apellidos" x:Name="_apellidos" Margin="10"/>
+        <DatePicker x:Name="_fechanac" Margin="10"/>
+        <Entry Keyboard="Email" Placeholder="Correo" x:Name="_correo" Margin="10"/>
+
+        <Button x:Name="btnEnviar" Background="green"
+                BorderColor="YellowGreen"
+                Margin="10" FontSize="18" 
+                WidthRequest="150" BorderWidth="1" 
+                Text="Enviar" Clicked="btnEnviar_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

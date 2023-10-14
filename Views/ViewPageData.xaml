@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_2.Views.ViewPageData"
+             Title="Vista">
+    <VerticalStackLayout Margin="10" HorizontalOptions="CenterAndExpand">
+
+        <Label Text="Datos Recibidos"
+               FontSize="40"/>
+
+        <Label 
+            Margin="10"
+            FontSize="20"
+            FontAttributes="Bold"
+            Text="{Binding nombres}" />
+
+        <Label 
+            Margin="10"
+            FontSize="20"
+            FontAttributes="Bold"
+            Text="{Binding apellidos}" />
+
+        <Label 
+            Margin="10"
+            FontSize="20"
+            FontAttributes="Bold"
+            Text="{Binding fechanac}" />
+
+        <Label 
+            Margin="10"
+            FontSize="20"
+            FontAttributes="Bold"
+            Text="{Binding correo}" />
+    </VerticalStackLayout>
+</ContentPage>
